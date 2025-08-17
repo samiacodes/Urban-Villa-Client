@@ -7,7 +7,7 @@ const SendNoticeButton = () => {
   const sendNotices = async () => {
     try {
       const res = await axiosSecure.patch("/notices/send");
-      toast.success(res.data.message || "Notices sent successfully!");
+      toast.success(res.data.message || "Notices sent successfully!!!");
     } catch (err) {
       console.error("❌ Error sending notices:", err);
       toast.error("Failed to send notices");
